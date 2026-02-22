@@ -4,14 +4,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRUD de Pensamentos</title>
+    <title>Memorya</title>
+    <link rel="icon" href="assets/imagens/star.png">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <div class="conteudo-cabecalho">
         <div class="logo">
-          <img src="assets/imagens/logo.png" alt="">
+          <img src="assets/imagens/memorya.png" alt="">
           <h1>Trechos de músicas,<br> citações de livros e
             <br> <strong>suas melhores ideias
             <br> num só lugar!</strong>
@@ -19,11 +20,14 @@
         </div>
         <div class="imagem-cabecalho">
           <img 
-            src="assets/imagens/computador-cabecalho.png" 
+            src="assets/imagens/project.gif" 
             alt="">
         </div>
       </div>
     </header>
+    <div class="banner">
+      <img src="assets/imagens/banners.png" class="img">
+    </div>
     <main class="background-overlay">
       <div class="overlay"></div>
       <div class="overlay overlay-color"></div>
@@ -57,7 +61,7 @@
       <section id="lista-pensamentos-container">
         <h3>Meu Mural</h3>
         <div id="mensagem-vazia" class="mensagem-vazia">
-          <img src="assets/imagens/lista-vazia.png" alt="Nenhum pensamento disponível">
+          <img src="assets/imagens/empty.svg" alt="Nenhum pensamento disponível">
           <p>Nada por aqui ainda, que tal compartilhar alguma ideia?</p>
         </div>
         <ul id="lista-pensamentos"></ul>
@@ -65,7 +69,7 @@
     </main>
     <footer>
       <p>&copy; 
-        2024 Desenvolvido por Alura. 
+        2024 Desenvolvido por Yasmim Cosme. 
         Projeto fictício sem fins comerciais.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>

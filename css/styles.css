@@ -5,11 +5,14 @@
 }
 
 :root {
-  --Baby-blue: #DBE4EF;
-  --Azul-Dark: #041832;
+  --Baby-blue: #ffffff;
+  --Faded-Cooper: #A57F60;
   --Cinza-claro: #EDF0F4;
   --Cinza-medio: #8F8F8F;
   --Cinza: #444;
+  --Light-Bronze: #E3A587;
+  --Dark-Bronze: #d1977a;
+  --Rosy-Copper: #DB5A42;
 }
 
 body {
@@ -20,7 +23,7 @@ body {
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -38,7 +41,6 @@ main {
   height: 100%;
   background-image: url('/assets/imagens/background.png'); 
   background-size: cover;
-  opacity: 0.5;
   z-index: -1;
 }
 
@@ -48,14 +50,15 @@ main {
 
 
 header {
-  padding: 112px 240px 112px 360px;
-  background: var(--Azul-Dark, #041832);
+  padding: 65px 60px 30px 60px;
+  background: var(--Dark-Bronze, #d1977a);
+  border: none;
 }
 
 .conteudo-cabecalho {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 250px;
   align-items: center;
 }
 
@@ -73,18 +76,32 @@ header .logo h1 {
   color: var(--Baby-blue, #DBE4EF);
   font-family: "Poppins", sans-serif;
   align-self: center;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 300;
   line-height: 67.6px;
 }
 
 .imagem-cabecalho img{
   max-width: 500px;
+   display: block;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  background: linear-gradient(
+  to bottom,
+  #d1977a 1%,
+  #F4F4F4 1%
+);
 }
 
 footer {
   padding: 32px 360px;
-  background: #041832;
+  background: var(--Dark-Bronze, #d1977a);
   color: var(--Baby-blue, #DBE4EF);
   text-align: center;
   width: 100%;
@@ -93,7 +110,7 @@ footer {
 }
 
 h2, h3 {
-  color: var(--Azul-Dark, #041832);
+  color: var(--Dark-Bronze, #041832);
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 44px;
@@ -138,7 +155,7 @@ h2, h3 {
 
 #pensamento-form label {
   margin-bottom: 16px;
-  color: var(--Azul-Dark, #041832);
+  color: var(--Faded-Cooper, #041832);
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -183,12 +200,12 @@ h2, h3 {
 }
 
 #botao-salvar {
-  background: var(--Azul-Dark, #041832);
+  background: var(--Rosy-Copper, #041832);
   min-width: 160px;
 }
 
 #botao-cancelar {
-  color: var(--Azul-Dark, #041832);
+  color: var(--Rosy-Copper, #041832);
 }
 
 #lista-pensamentos-container {
