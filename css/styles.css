@@ -40,7 +40,7 @@ main {
   width: 100%;
   height: 100%;
   background-image: url('/assets/imagens/background.png'); 
-  background-size: cover;
+  background-size: contain;
   z-index: -1;
 }
 
@@ -219,7 +219,7 @@ h2, h3 {
 }
 
 #lista-pensamentos-container h3 {
-  margin: 40px 0;
+  margin: 80px 0;
 }
 
 #mensagem-vazia {
@@ -243,7 +243,7 @@ h2, h3 {
   position: relative;
   padding: 16px;
   background: var(--Branco, #FFF);
-  box-shadow: 8px 8px 0px 0px #154580;
+  box-shadow: 8px 8px 0px 0px #A57F60;
   flex: 1 1 calc(33.333% - 24px);
   max-width: calc(33.333% - 24px);
   min-width: 384px;

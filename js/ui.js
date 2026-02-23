@@ -40,8 +40,8 @@
         li.classList.add("li-pensamento")
 
         const iconeAspas = document.createElement("img")
-        iconeAspas.src = "assets/imagens/aspas-azuis.png"
-        iconeAspas.alt = "Aspas azuis"
+        iconeAspas.src = "assets/imagens/aspas-vermelhas.png"
+        iconeAspas.alt = "Aspas vermelhas"
         iconeAspas.classList.add("icone-aspas")
 
         const pensamentoConteudo = document.createElement("div")
