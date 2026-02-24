@@ -1,6 +1,31 @@
-# Memoteca
+# 🧠 Memorya — CRUD com JavaScript
 
-Memoteca é um aplicativo organizador de pensamentos e frases que permite cadastrar, listar, editar e deletar pensamentos, incluindo informações como conteúdo e autoria.
+💭 Aplicativo organizador de pensamentos desenvolvido com foco em prática de CRUD, consumo de API e organização de código
+
+<p align="center"> <!-- ===== FRONTEND ===== -->
+
+<strong>Frontend:</strong><br>
+<img src="https://img.shields.io/badge/HTML5-Estrutura%20Semântica-red?logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-Estilização-blue?logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-Lógica%20da%20Aplicação-yellow?logo=javascript&logoColor=black"/>
+
+<!-- ===== REQUISIÇÕES & API ===== -->
+
+<strong>Requisições & API:</strong><br>
+<img src="https://img.shields.io/badge/Fetch%20API-Requisições%20HTTP-green"/>
+<img src="https://img.shields.io/badge/Axios-HTTP%20Client-purple"/>
+<img src="https://img.shields.io/badge/JSON%20Server-Fake%20API-orange"/>
+
+<!-- ===== AMBIENTE & VERSIONAMENTO ===== -->
+
+<strong>Ambiente & Versionamento:</strong><br>
+<img src="https://img.shields.io/badge/Node.js-Ambiente%20de%20Execução-brightgreen?logo=node.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-Versionamento-orange?logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-Repositório-black?logo=github&logoColor=white"/>
+
+</p>
+
+<br> 
 
 ## 🔨 Funcionalidades do projeto
 
@@ -12,24 +37,7 @@ Memoteca é um aplicativo organizador de pensamentos e frases que permite cadast
 
 `Exclusão de pensamentos`: Permite remover pensamentos da lista.
 
-## ✔️ Técnicas e tecnologias utilizadas
-
-`JavaScript`: Linguagem de programação utilizada para desenvolver a lógica do aplicativo.
-
-`Fetch API`: Utilizada para realizar requisições HTTP para comunicação com o servidor.
-
-`Axios`: Biblioteca usada para facilitar e simplificar as requisições HTTP.
-
-`Node.js`: Plataforma utilizada para executar o ambiente de desenvolvimento.
-
-`JSON Server`: Utilizado para simular um backend e facilitar o desenvolvimento e teste das operações CRUD.
-
-`CSS`: Utilizado para estilização da interface do aplicativo.
-
-
-## 📁 Link do Figma
-
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/design/Sz1gmmemxqcB3amInL4Ndp/Rebrand-Memoteca-%7C-Curso-CRUD?node-id=148-26&t=FpdmfbiM1i1s6REQ-0).
+<br> 
 
 ## 🛠️ Abrir e rodar o projeto
 
@@ -56,3 +64,25 @@ Para executar o frontend, abra o projeto no Visual Studio Code. Com a extensão 
 Acesse o frontend localmente em seu navegador:
 
 http://localhost:5500
+
+<br> 
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento da Memoteca, foi possível:
+- Compreender o funcionamento completo de um CRUD;
+- Trabalhar com requisições assíncronas utilizando async/await;
+- Entender o conceito de Promise na prática;
+- Simular uma API REST utilizando JSON Server;
+- Integrar front-end com backend (mesmo sendo fake);
+- Melhorar a organização de código em projetos JavaScript.
+
+<br> 
+
+## 🚀 Próximos Passos
+
+- 🔎 Implementar filtro ou busca de pensamentos
+- 🌙 Adicionar modo escuro
+- 💾 Persistência em backend real
+- 🚀 Deploy da aplicação
+- ✨ Melhorias de UI/UX
