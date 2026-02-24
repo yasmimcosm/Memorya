@@ -3,10 +3,10 @@
 
     const api = {
 
-        async buscarPensamento () {
+        async buscarPensamentos () {
             try {
                 const response = await axios.get(`${URL_BASE}/pensamentos`)
-                return await response.data
+                return response.data
 
             } catch (error) {
                 console.error(error)
@@ -14,10 +14,10 @@
             }
         },
 
-        async salvarPensamento () {
+        async salvarPensamento (pensamentos) {
             try {
                 const response = await axios.post(`${URL_BASE}/pensamentos`, pensamentos)
-                return await response.data
+                return response.data
 
             } catch (error) {
                 console.error(error)
@@ -28,7 +28,7 @@
         async buscarPensamentoPorId (id) {
             try {
                 const response = await axios.get(`${URL_BASE}/pensamentos/${id}`)
-                return await response.data
+                return response.data
 
             } catch (error) {
                 console.error(error)
@@ -39,7 +39,7 @@
         async editarPensamento (pensamento) {
             try {
                 const response = await axios.put(`${URL_BASE}/pensamentos/${pensamento.id}`, pensamento)
-                return await response.data
+                return response.data
 
             } catch (error) {
                 console.error(error)
@@ -50,14 +50,14 @@
         async excluirPensamento (id){
             try {
                 const response = await axios.delete(`${URL_BASE}/pensamentos/${id}`)
-                return await response.data
+                return response.data
 
             } catch (error) {
                 console.error(error)
                 throw error
             }
         },
-        
+
     }
     
 

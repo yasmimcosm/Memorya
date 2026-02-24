@@ -9,7 +9,7 @@
             listaPensamentos.innerHTML = ""
 
             try {
-                const pensamentos = await api.buscarPensamento()
+                const pensamentos = await api.buscarPensamentos()
                 if (pensamentos === 0){
                     mensagemVazia.style.display = "block"
                 } else {
@@ -86,6 +86,7 @@
         },
 
         async preencherFormulario(pensamentoId) {
+            alert("Edite seu pensamento no formulário acima!")
             const pensamento = await api.buscarPensamentoPorId(pensamentoId)
             document.getElementById("pensamento-id").value = pensamento.id
             document.getElementById("pensamento-conteudo").value = pensamento.conteudo

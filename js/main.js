@@ -23,6 +23,7 @@
         try { 
             if(id) {
             await api.editarPensamento({ id, conteudo, autoria })
+
             } else {
             await api.salvarPensamento({ conteudo, autoria })
             }
