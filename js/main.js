@@ -13,24 +13,30 @@
     })
 
     async function manipularSubmissaoFormulario(event) {
-    event.preventDefault()
-    const id = document.getElementById("pensamento-id").value
-    const conteudo = document.getElementById("pensamento-conteudo").value
-    const autoria = document.getElementById("pensamento-autoria").value
 
-    try { 
-        if(id) {
-        await api.editarPensamento({ id, conteudo, autoria })
-        } else {
-        await api.salvarPensamento({ conteudo, autoria })
+        event.preventDefault()
+
+        const id = document.getElementById("pensamento-id").value
+        const conteudo = document.getElementById("pensamento-conteudo").value
+        const autoria = document.getElementById("pensamento-autoria").value
+
+        try { 
+            if(id) {
+            await api.editarPensamento({ id, conteudo, autoria })
+            } else {
+            await api.salvarPensamento({ conteudo, autoria })
+            }
+            ui.renderizarPensamentos()
+
         }
-        ui.renderizarPensamentos()
-    }
-    catch {
-        alert("Erro ao salvar pensamento")
-    }
+        catch (error){
+            alert("Erro ao salvar pensamento")
+            console.error(error)
+            throw error
+        }
     }
 
     function manipularCancelamento() {
-    ui.limparFormulario()
+
+        ui.limparFormulario()
     }

@@ -41,6 +41,8 @@ main {
   height: 100%;
   background-image: url('/assets/imagens/background.png'); 
   background-size: contain;
+  background-size: cover;
+  background-position: center;
   z-index: -1;
 }
 
