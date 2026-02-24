@@ -69,7 +69,7 @@ http://localhost:5500
 
 ## 📚 Aprendizados
 
-Durante o desenvolvimento da Memoteca, foi possível:
+Durante o desenvolvimento da Memorya, foi possível:
 - Compreender o funcionamento completo de um CRUD;
 - Trabalhar com requisições assíncronas utilizando async/await;
 - Entender o conceito de Promise na prática;
